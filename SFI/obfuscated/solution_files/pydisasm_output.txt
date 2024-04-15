@@ -1,0 +1,321 @@
+# pydisasm version 6.1.1dev0
+# Python bytecode 3.10.0 (3439)
+# Disassembled from Python 3.10.14 (main, Mar 21 2024, 16:24:04) [GCC 11.2.0]
+# Timestamp in code: 1712535412 (2024-04-07 19:16:52)
+# Source code size mod 2**32: 0 bytes
+# Method Name:      <module>
+# Filename:         AiTOB49ZsfUOfPAQ
+# Argument count:   0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals: 0
+# Stack size:       2
+# Flags:            0x00000040 (NOFREE)
+# First Line:       1
+# Constants:
+#   0: 0
+#   1: ('Random',)
+#   2: None
+#   3: b'\xea\x84\xebiT\xd58\xcf\xff\x99\xb6\x0c+\xcem\xd4\xc0\xd2\xf6\x1e>\xba\x1f\xe1\xce\x94\xf0:$\xc7>\xe3\xd7\x8f\xff'
+#   4: <code object f at 0x7f93da6bc5b0, file "AiTOB49ZsfUOfPAQ", line 6>
+#   5: 'f'
+# Names:
+#   0: random
+#   1: Random
+#   2: zlib
+#   3: o
+#   4: f
+ 1:          0 LOAD_CONST          (0)
+              2 LOAD_CONST          (('Random',))
+              4 IMPORT_NAME         (random) ; TOS = import_module(random)
+              6 IMPORT_FROM         (Random)
+              8 STORE_NAME          (Random) ; Random = import_module(Random)
+             10 POP_TOP
+
+ 2:         12 LOAD_CONST          (0)
+             14 LOAD_CONST          (None)
+             16 IMPORT_NAME         (zlib) ; TOS = import_module(zlib)
+             18 STORE_NAME          (zlib) ; zlib = import_module(zlib)
+
+ 4:         20 LOAD_CONST          (b'\xea\x84\xebiT\xd58\xcf\xff\x99\xb6\x0c+\xcem\xd4\xc0\xd2\xf6\x1e>\xba\x1f\xe1\xce\x94\xf0:$\xc7>\xe3\xd7\x8f\xff')
+             22 STORE_NAME          (o) ; o = b'\xea\x84\xebiT\xd5...
+
+ 6:         24 LOAD_CONST          (<code object f at 0x7f93da6bc5b0, file "AiTOB49ZsfUOfPAQ", line 6>)
+             26 LOAD_CONST          ("f")
+             28 MAKE_FUNCTION       (No arguments) ; TOS = def f(...): ...
+             30 STORE_NAME          (f) ; f = def f(...): ...
+             32 LOAD_CONST          (None)
+             34 RETURN_VALUE        return None
+
+
+# Method Name:      f
+# Filename:         AiTOB49ZsfUOfPAQ
+# Argument count:   2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals: 5
+# Stack size:       8
+# Flags:            0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:       6
+# Constants:
+#   0: None
+#   1: ''
+#   2: <code object <listcomp> at 0x7f93da69f5d0, file "AiTOB49ZsfUOfPAQ", line 8>
+#   3: 'f.<locals>.<listcomp>'
+#   4: 16
+#   5: 32
+#   6: '/tmp/'
+#   7: 'rb'
+#   8: <code object <genexpr> at 0x7f93da69f680, file "AiTOB49ZsfUOfPAQ", line 11>
+#   9: 'f.<locals>.<genexpr>'
+#  10: 18446744073709551616
+#  11: 8
+#  12: 'big'
+#  13: ('byteorder',)
+#  14: <code object <listcomp> at 0x7f93da6bc450, file "AiTOB49ZsfUOfPAQ", line 12>
+#  15: 709408303
+#  16: 'latin-1'
+# Names:
+#   0: Random
+#   1: join
+#   2: range
+#   3: randint
+#   4: open
+#   5: read
+#   6: sum
+#   7: len
+#   8: to_bytes
+#   9: bytes
+#  10: o
+#  11: zlib
+#  12: crc32
+#  13: print
+#  14: decode
+# Varnames:
+#      s, x, fn, f, rs
+# Positional arguments:
+#      s, x
+# Local variables:
+#   2: fn
+#   3: f
+#   4: rs
+# Cell variables:
+#   0: d
+#   1: k
+#   2: r
+#   3: x
+ 7:          0 LOAD_GLOBAL         (Random)
+              2 LOAD_FAST           (s)
+              4 CALL_FUNCTION       (1 positional argument) ; TOS = Random(s)
+              6 STORE_DEREF         (r)
+
+ 8:          8 LOAD_CONST          ("")
+             10 LOAD_METHOD         (join)
+             12 LOAD_CLOSURE        (r)
+             14 BUILD_TUPLE         () ; TOS = (r,)
+             16 LOAD_CONST          (<code object <listcomp> at 0x7f93da69f5d0, file "AiTOB49ZsfUOfPAQ", line 8>)
+             18 LOAD_CONST          ("f.<locals>.<listcomp>")
+             20 MAKE_FUNCTION       (closure) ; TOS = def f.<locals>.<listcomp>(...): ...
+             22 LOAD_GLOBAL         (range)
+             24 LOAD_DEREF          (r)
+             26 LOAD_METHOD         (randint)
+             28 LOAD_CONST          (16)
+             30 LOAD_CONST          (32)
+             32 CALL_METHOD         (2 positional arguments)
+             34 CALL_FUNCTION       (1 positional argument) ; TOS = 32(2 positional arguments)
+             36 GET_ITER
+             38 CALL_FUNCTION       (1 positional argument) ; TOS = 32(2 positional arguments)()
+             40 CALL_METHOD         (1 positional argument)
+             42 STORE_FAST          (fn)
+
+ 9:         44 LOAD_GLOBAL         (open)
+             46 LOAD_CONST          ("/tmp/")
+             48 LOAD_FAST           (fn)
+             50 BINARY_ADD          TOS = "/tmp/" + fn
+             52 LOAD_CONST          ("rb")
+             54 CALL_FUNCTION       (2 positional arguments) ; TOS = open("/tmp/" + fn, "rb")
+             56 STORE_FAST          (f) ; f = open("/tmp/" + fn, "rb")
+
+ 10:         58 LOAD_FAST           (f)
+             60 LOAD_METHOD         (read)
+             62 CALL_METHOD         (0 positional arguments)
+             64 STORE_DEREF         (d)
+
+ 11:         66 LOAD_GLOBAL         (sum)
+             68 LOAD_CLOSURE        (d)
+             70 LOAD_CLOSURE        (x)
+             72 BUILD_TUPLE         () ; TOS = (d, x)
+             74 LOAD_CONST          (<code object <genexpr> at 0x7f93da69f680, file "AiTOB49ZsfUOfPAQ", line 11>)
+             76 LOAD_CONST          ("f.<locals>.<genexpr>")
+             78 MAKE_FUNCTION       (closure) ; TOS = def f.<locals>.<genexpr>(...): ...
+             80 LOAD_GLOBAL         (range)
+             82 LOAD_GLOBAL         (len)
+             84 LOAD_DEREF          (d)
+             86 CALL_FUNCTION       (1 positional argument) ; TOS = len(d)
+             88 CALL_FUNCTION       (1 positional argument) ; TOS = range(len(d))
+             90 GET_ITER
+             92 CALL_FUNCTION       (1 positional argument) ; TOS = range(len(d))()
+             94 CALL_FUNCTION       (1 positional argument) ; TOS = def f.<locals>.<genexpr>(...): ...(range(len(d))())
+             96 LOAD_CONST          (18446744073709551616)
+             98 BINARY_MODULO       TOS = def f.<locals>.<genexpr>(...): ...(range(len(d))()) %% 18446744073709551616
+            100 LOAD_ATTR           (to_bytes)
+            102 LOAD_CONST          (8)
+            104 LOAD_CONST          ("big")
+            106 LOAD_CONST          (('byteorder',))
+            108 CALL_FUNCTION_KW    (2 total positional and keyword args) ; TOS = to_bytes(8, byteorder="big")
+            110 STORE_DEREF         (k)
+
+ 12:        112 LOAD_GLOBAL         (bytes)
+            114 LOAD_CLOSURE        (k)
+            116 BUILD_TUPLE         () ; TOS = (k,)
+            118 LOAD_CONST          (<code object <listcomp> at 0x7f93da6bc450, file "AiTOB49ZsfUOfPAQ", line 12>)
+            120 LOAD_CONST          ("f.<locals>.<listcomp>")
+            122 MAKE_FUNCTION       (closure) ; TOS = def f.<locals>.<listcomp>(...): ...
+            124 LOAD_GLOBAL         (range)
+            126 LOAD_GLOBAL         (len)
+            128 LOAD_GLOBAL         (o)
+            130 CALL_FUNCTION       (1 positional argument) ; TOS = len(o)
+            132 CALL_FUNCTION       (1 positional argument) ; TOS = range(len(o))
+            134 GET_ITER
+            136 CALL_FUNCTION       (1 positional argument) ; TOS = range(len(o))()
+            138 CALL_FUNCTION       (1 positional argument) ; TOS = def f.<locals>.<listcomp>(...): ...(range(len(o))())
+            140 STORE_FAST          (rs) ; rs = def f.<locals>.<listcomp>(...): ...(range(len(o))())
+
+ 13:        142 LOAD_GLOBAL         (zlib)
+            144 LOAD_METHOD         (crc32)
+            146 LOAD_FAST           (rs)
+            148 CALL_METHOD         (1 positional argument)
+            150 LOAD_CONST          (709408303)
+            152 COMPARE_OP          (==) ; TOS = 1 positional argument == 709408303
+            154 POP_JUMP_IF_FALSE   (to 174)
+
+ 14:        156 LOAD_GLOBAL         (print)
+            158 LOAD_FAST           (rs)
+            160 LOAD_METHOD         (decode)
+            162 LOAD_CONST          ("latin-1")
+            164 CALL_METHOD         (1 positional argument)
+            166 CALL_FUNCTION       (1 positional argument) ; TOS = "latin-1"(1 positional argument)
+            168 POP_TOP
+            170 LOAD_CONST          (None)
+            172 RETURN_VALUE        return None
+
+ 13:    >> 174 LOAD_CONST          (None)
+            176 RETURN_VALUE        return None
+
+
+# Method Name:      <listcomp>
+# Filename:         AiTOB49ZsfUOfPAQ
+# Argument count:   1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals: 2
+# Stack size:       7
+# Flags:            0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:       8
+# Constants:
+#   0: 97
+#   1: 122
+# Names:
+#   0: chr
+#   1: randint
+# Varnames:
+#      .0, _
+# Positional arguments:
+#      .0
+# Local variables:
+#   1: _
+# Free variables:
+#   0: r
+ 8:          0 BUILD_LIST          () ; TOS = []
+              2 LOAD_FAST           (.0)
+        >>   4 FOR_ITER            (to 26)
+              6 STORE_FAST          (_)
+              8 LOAD_GLOBAL         (chr)
+             10 LOAD_DEREF          (r)
+             12 LOAD_METHOD         (randint)
+             14 LOAD_CONST          (97)
+             16 LOAD_CONST          (122)
+             18 CALL_METHOD         (2 positional arguments)
+             20 CALL_FUNCTION       (1 positional argument) ; TOS = 122(2 positional arguments)
+             22 LIST_APPEND         2
+             24 JUMP_ABSOLUTE       (to 4)
+        >>  26 RETURN_VALUE
+
+
+# Method Name:      <genexpr>
+# Filename:         AiTOB49ZsfUOfPAQ
+# Argument count:   1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals: 2
+# Stack size:       4
+# Flags:            0x00000033 (GENERATOR | NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:       11
+# Constants:
+#   0: None
+# Varnames:
+#      .0, n
+# Positional arguments:
+#      .0
+# Local variables:
+#   1: n
+# Free variables:
+#   0: d
+#   1: x
+              0 GEN_START           0
+
+ 11:          2 LOAD_FAST           (.0)
+        >>   4 FOR_ITER            (to 28)
+              6 STORE_FAST          (n)
+              8 LOAD_DEREF          (d)
+             10 LOAD_FAST           (n)
+             12 BINARY_SUBSCR       TOS = d[n]
+             14 LOAD_DEREF          (x)
+             16 LOAD_FAST           (n)
+             18 BINARY_POWER        TOS = (x) ** n
+             20 BINARY_MULTIPLY     TOS = (d[n]) * ((x) ** n)
+             22 YIELD_VALUE
+             24 POP_TOP
+             26 JUMP_ABSOLUTE       (to 4)
+        >>  28 LOAD_CONST          (None)
+             30 RETURN_VALUE        return None
+
+
+# Method Name:      <listcomp>
+# Filename:         AiTOB49ZsfUOfPAQ
+# Argument count:   1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals: 2
+# Stack size:       7
+# Flags:            0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:       12
+# Names:
+#   0: o
+#   1: len
+# Varnames:
+#      .0, n
+# Positional arguments:
+#      .0
+# Local variables:
+#   1: n
+# Free variables:
+#   0: k
+ 12:          0 BUILD_LIST          () ; TOS = []
+              2 LOAD_FAST           (.0)
+        >>   4 FOR_ITER            (to 34)
+              6 STORE_FAST          (n)
+              8 LOAD_GLOBAL         (o)
+             10 LOAD_FAST           (n)
+             12 BINARY_SUBSCR       TOS = o[n]
+             14 LOAD_DEREF          (k)
+             16 LOAD_FAST           (n)
+             18 LOAD_GLOBAL         (len)
+             20 LOAD_DEREF          (k)
+             22 CALL_FUNCTION       (1 positional argument) ; TOS = len(k)
+             24 BINARY_MODULO       TOS = n %% (len(k))
+             26 BINARY_SUBSCR       TOS = k[n %% (len(k))]
+             28 BINARY_XOR          TOS = (o[n]) ^ (k[n %% (len(k))])
+             30 LIST_APPEND         2
+             32 JUMP_ABSOLUTE       (to 4)
+        >>  34 RETURN_VALUE
