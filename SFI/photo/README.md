@@ -1,7 +1,5 @@
 # Photo
 
-Category: **_Forensic_**
-
 ## Table of contents
 
 - [Task](#task)

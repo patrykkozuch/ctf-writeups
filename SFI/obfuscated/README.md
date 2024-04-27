@@ -1,6 +1,4 @@
-# Title
-
-Category: **_Category_**
+# Obfuscated
 
 ## Table of contents
 

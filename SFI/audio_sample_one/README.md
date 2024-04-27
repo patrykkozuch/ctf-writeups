@@ -1,6 +1,4 @@
-# Audio Sample One - Writeup
-
-Category: **_Forensic_**
+# Audio Sample One
 
 ## Table of contents
 

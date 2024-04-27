@@ -1,6 +1,4 @@
-# Title
-
-Category: **_Misc_**
+# Light
 
 ## Table of contents
 

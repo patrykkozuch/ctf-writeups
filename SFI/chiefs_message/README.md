@@ -1,6 +1,4 @@
-# Title
-
-Category: **_Category_**
+# Chief's message
 
 ## Table of contents
 

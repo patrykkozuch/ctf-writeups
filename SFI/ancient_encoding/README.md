@@ -1,6 +1,4 @@
-# Title
-
-Category: **_Category_**
+# Ancient encoding
 
 ## Table of contents
 

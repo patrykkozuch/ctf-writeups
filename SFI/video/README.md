@@ -1,7 +1,5 @@
 # Video
 
-Category: **_Other_**
-
 ## Table of contents
 
 - [Task](#task)

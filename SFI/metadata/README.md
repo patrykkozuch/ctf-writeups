@@ -1,6 +1,4 @@
-# Title
-
-Category: **_Misc_**
+# Metadata
 
 ## Table of contents
 
